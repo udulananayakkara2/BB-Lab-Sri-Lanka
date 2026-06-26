@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB LAB | Inner Beauty Solution</title>
+    <style>
+        :root { --gold: #d4af37; --bg-amber: #f5a623; --dark-purple: #4a148c; }
+        body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #fffdf5; color: #333; }
+
+        /* Welcome Animation */
+        #loader {
+            position: fixed; width: 100%; height: 100%; 
+            background: linear-gradient(135deg, #f5a623, #d4af37);
+            display: flex; justify-content: center; align-items: center; 
+            color: white; z-index: 9999;
+            animation: fadeOut 1s forwards 2.5s;
+        }
+        .welcome-text { font-size: 3rem; font-weight: 300; letter-spacing: 5px; animation: popIn 1.5s ease-out; }
+        @keyframes popIn { 0% { transform: scale(0.5); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
+
+        /* Header */
+        header { padding: 30px 10%; display: flex; justify-content: space-between; align-items: center; background: white; border-bottom: 1px solid #eee; }
+        .logo { font-size: 2rem; font-weight: bold; color: var(--dark-purple); }
+
+        /* Hero Section with Custom Background Image */
+        .hero { 
+            height: 60vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            background-image: url('Picsart_26-06-26_12-50-09-809.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Products Grid */
+        .container { max-width: 1200px; margin: 60px auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 300px; object-fit: contain; margin-bottom: 20px; }
+        .btn-order { background: var(--dark-purple); color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div id="loader"><div class="welcome-text">WELCOME TO BB LAB</div></div>
+
+<header>
+    <div class="logo">BB LAB</div>
+    <div>Brand Story | Category</div>
+</header>
+
+<section class="hero">
+    <!-- Beauty Base removed -->
+</section>
+
+<div class="container">
+    <!-- Products -->
+    <div class="card">
+        <img src="Screenshot 2026-06-26 141339.png" alt="Product">
+        <h3>Low Molecular Collagen S</h3>
+        <a href="https://wa.me/94752266934?text=I%20would%20like%20to%20order%20Low%20Molecular%20Collagen%20S" class="btn-order">ORDER NOW</a>
+    </div>
+    <div class="card">
+        <img src="Screenshot 2026-06-26 141406.png" alt="Product">
+        <h3>Biotin Collagen V</h3>
+        <a href="https://wa.me/94752266934?text=I%20would%20like%20to%20order%20Biotin%20Collagen%20V" class="btn-order">ORDER NOW</a>
+    </div>
+    <div class="card">
+        <img src="Screenshot 2026-06-26 141439.png" alt="Product">
+        <h3>Glutathione Collagen W</h3>
+        <a href="https://wa.me/94752266934?text=I%20would%20like%20to%20order%20Glutathione%20Collagen%20W" class="btn-order">ORDER NOW</a>
+    </div>
+    <div class="card">
+        <img src="Screenshot 2026-06-26 141901.png" alt="Product">
+        <h3>Pantothenic Acid Collagen T</h3>
+        <a href="https://wa.me/94752266934?text=I%20would%20like%20to%20order%20Pantothenic%20Acid%20Collagen%20T" class="btn-order">ORDER NOW</a>
+    </div>
+    <div class="card">
+        <img src="Screenshot 2026-06-26 142839.png" alt="Product">
+        <h3>The Collagen Double Care</h3>
+        <a href="https://wa.me/94752266934?text=I%20would%20like%20to%20order%20The%20Collagen%20Double%20Care" class="btn-order">ORDER NOW</a>
+    </div>
+</div>
+
+</body>
+</html>
